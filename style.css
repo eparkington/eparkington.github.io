@@ -1,0 +1,47 @@
+#container {
+  margin-top: 0.8rem;
+  display: grid;
+  grid-template-rows: 3rem auto;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#navbar {
+  width: 100%;
+  position: fixed;
+  z-index: 50;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+#navbar ul {
+  width: 20rem;
+  margin: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style:none;
+ 
+}
+
+#navbar li {
+
+}
+
+main {
+ 
+}
+
+#welcome-section {
+  height: 100vh;
+}
+
+@media (max-width: 40rem) {
+  #welcome-section {
+    height: 50vh;
+  }
+}
