@@ -51,6 +51,10 @@ main {
  padding: 2.5rem;
 }
 
+.title-section {
+      font-family: 'Dancing Script', cursive;
+}
+
 #welcome-section {
  
 }

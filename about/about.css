@@ -1,3 +1,12 @@
+.title-section {
+    font-size: 3rem;
+    font-family: 'Dancing Script', cursive;
+    position: relative;
+    top: 250px;
+    left: 170px;
+    color: white;
+}
+
 main {
     margin: 2rem auto;
     display: flex;
@@ -12,6 +21,7 @@ main {
     width:95%;
     align-self:center;
 }
+
 .about-img {
     width:100%;
 }
@@ -19,4 +29,29 @@ main {
 .about-img img {
     width: 100%;
     border-radius: 10% 25%;
+}
+
+@media (min-width: 40rem) {
+    .title-section {
+        margin: 5rem auto 0 auto;
+        grid-row: 2;
+        position: static;
+        color: purple;
+        
+    }
+    main {
+        grid-row: 3;
+        width: 55rem;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .about-section {
+        width: 45%;
+    }
+    
+    .about-img {
+    width:45%;
+}
+
 }
