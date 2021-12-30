@@ -1,0 +1,22 @@
+main {
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column-reverse;
+    width: 30rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.about-section {
+    width:95%;
+    align-self:center;
+}
+.about-img {
+    width:100%;
+}
+
+.about-img img {
+    width: 100%;
+    border-radius: 10% 25%;
+}
