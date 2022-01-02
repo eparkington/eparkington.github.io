@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Oswald:wght@400;600&display=swap');
+
+:root {
+    --accent: #df9fdf; /* Span style, hover */
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    display: grid;
+    grid-row-gap: 1rem;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover, a:active {
+    color: var(--accent);
+}
+
+#navbar {
+  width: 95%;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  background: white;
+  z-index: 5;
+  display: flex;
+  justify-content: space-between;
+
+
+}
+
+#navbar ul {
+  width: 18rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style:none;
+ 
+}
+
+#navbar li {
+    font-variant:small-caps;
+    font-size:1.2rem;
+}
+
+.title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+    letter-spacing: 0.5rem;
+}
+
+main {
+ width: 100%;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+footer li {
+    display: inline-block;
+    padding: 0 2.5rem;
+}

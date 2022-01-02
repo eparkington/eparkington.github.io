@@ -7,11 +7,13 @@
 	<meta name="author" content="Your Name">
 	<meta name="description" content="Example description">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="style/main.css">
+	<link rel="stylesheet" href="shared.css">
+    <link rel="stylesheet" href="style/main.css">
 	<link rel="icon" type="image/x-icon" href=""/>
 </head>
 
-<body id="container">
+<body>
+ <header>
  <nav id="navbar">
   <div><h3 class="title">l.a.driscoll</h3></div>
   <ul>
@@ -21,12 +23,39 @@
     <li><a href="#contact">Contact</a></li>
   </ul>
 </nav>
+</header>
 <main>
-    <h1 class="title-section">Hi, I'm Lauren.</h1>
-  <section id="welcome-section">
-  
-  </section>
+    <h1 id="title-section">Hi, I'm <span class="title-span">Lauren</span>.</h1>
+    <h2 id="projects">Projects</h2>
+    <article id="projects-section">
+        <section class="project-type">
+            <h3>Responsive Design</h3>
+            <ul>
+            <li>Product Landing Page</li>
+            <li>Example</li>
+            <li>Example</li></ul>
+        </section>
+        <section class="project-type">
+            <h3>Javascript</h3>
+              <ul>
+            <li>Product Landing Page</li>
+            <li>Example</li>
+            <li>Example</li></ul>
+        </section>
+        <section class="project-type">
+            <h3>Java</h3>
+            <ul>
+            <li>Product Landing Page</li>
+            <li>Example</li>
+            <li>Example</li>
+            </ul>
+        </section>
+    </article>
 </main>
+    <footer class="footer">
+    <ul><li>LinkedIn</li>
+    <li>CodePen</li>
+    <li>Contact</li></ul></footer> 
 </body>
 
 </html>
