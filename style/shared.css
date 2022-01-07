@@ -8,15 +8,11 @@
 }
 
 body {
+    background: transparent;
     font-family: 'Oswald', sans-serif;
     color: var(--medium);
     display: grid;
-}
-
-.backdrop {
-    height: 100vh;
-    display: none;
-    background: rgba(0, 0, 0, 0.5);
+    overflow-x: hidden;
 }
 
 a, a:visited {
@@ -38,37 +34,63 @@ a:hover, a:active {
     z-index: 1;
 }
 
-.toggle-button {
-  width: 3rem;
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  padding-top: 0;
-  padding-bottom: 0;
-  vertical-align: middle;
+#menu-button {
+    width: 4rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding-top: 0;
+    padding-bottom: 0;
+    vertical-align: middle;
+    position: absolute;
+    z-index: 15;
 }
 
-.toggle-button:focus {
+#menu-button:focus {
   outline: none;
 }
 
-.toggle-button__bar {
-  width: 100%;
+.menu-button__bar {
+  width: 3rem;
   height: 0.2rem;
-  background: black;
+  background: var(--medium);
+  position: absolute;
   display: block;
-  margin: 0.6rem 0;
+}
+
+.menu-button__bar::before, .menu-button__bar::after {
+    content:'';
+    width: 3rem;
+    height: 0.2rem;
+    background: var(--medium);
+    position: absolute;
+    display:block;
+    
+}
+
+.menu-button__bar::before {
+    top: 10px;
+    left: 0;
+    transform-origin: left top;
+    
+}
+
+.menu-button__bar::after {
+    bottom: -20px;
+    left: 0;
+    transform-origin:  left bottom;
 }
 
 .mobile-nav {
   display:none;
-  position: fixed;
-  z-index: 101;
-  top: 0;
-  left: 0;
+  position: absolute;
+  z-index: 9;
+  margin: 0;
+  padding: 5rem 0;
   background: white;
-  width: 60%;
-  height: 100vh;
+  width: 90%;
+  height: 100%;
+ 
 }
 
 .mobile-nav__items {
@@ -106,7 +128,7 @@ a:hover, a:active {
     font-size:1.2rem;
 }
 
-.title {
+.main-header__title {
     font-family: 'Dancing Script', cursive;
     font-size: 2rem;
     letter-spacing: 0.5rem;
@@ -116,6 +138,7 @@ main {
  width: 100%;
 }
 
+
 footer {
     display: flex;
     justify-content: center;
@@ -123,12 +146,20 @@ footer {
 
 footer li {
     display: inline-block;
+    margin: 0;
     padding: 0 2.5rem;
 }
 
-
 .show {
     display: block !important;
+}
+
+.transform {
+    transform: rotateZ(-41deg);
+}
+
+.rotate {
+    display: none !important;
 }
 
 @media (min-width: 40rem) {
@@ -137,7 +168,7 @@ footer li {
           grid-row-gap: 1rem;
     }
     
-      .toggle-button {
+      #menu-button {
     display: none;
     }
     

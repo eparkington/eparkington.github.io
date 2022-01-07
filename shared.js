@@ -1,27 +1,17 @@
-var toggleButton = document.querySelector(".toggle-button");
-var mobileNav = document.querySelector(".mobile-nav");
-var backdrop = document.querySelector('.backdrop');
-
+let toggleButton = document.querySelector(".menu-button__bar");
+let mobileNav = document.querySelector(".mobile-nav");
+let changeButton = window.getComputedStyle(toggleButton, '::after');
 
 toggleButton.addEventListener("click", function() {
-       mobileNav.classList.add("show");
-       backdrop.classList.add("show");
+    mobileNav.classList.toggle("show");
+    changeButton.classList.toggle("transform");
+
+                                                   
+                                                   
 }
     );
 
-backdrop.addEventListener("click", function() {
-        mobileNav.classList.remove("show");
-        backdrop.classList.remove("show");
-    })
-                              
-/*
-window.onclick = function(e) {
-    if(!e.target.matches('.mobile-nav')) {
-        if(mobileNav.classList.contains("show")) {
-            
-        }
-}
-}
 
-                              
-*/
+
+
+

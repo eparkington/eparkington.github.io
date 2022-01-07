@@ -2,7 +2,7 @@ ul {
    list-style-type: none;
 }
 
-#title-section {
+.main-title {
     font-family: 'Dancing Script', cursive;
     width: 100%;
     text-align: center;
@@ -10,7 +10,7 @@ ul {
     color: var(--darkest);
 }
 
-.title-span {
+.main-title__accent {
     color: var(--accent);
 }
 
@@ -41,6 +41,7 @@ ul {
     border-radius: 10%;
 }
 
+
 .project-type h3 {
     color: var(--darkest);
     font-variant: small-caps;
@@ -48,10 +49,8 @@ ul {
     
 }
 
-.project-type ul {
-    display: none;
-    color: var(--medium);
-   
+.project-type-inner {
+    display:none;
 }
 
 
