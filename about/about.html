@@ -7,21 +7,32 @@
 	<meta name="author" content="Your Name">
 	<meta name="description" content="Example description">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="/shared.css">
+	<link rel="stylesheet" href="/style/shared.css">
     <link rel="stylesheet" href="about.css">
 	<link rel="icon" type="image/x-icon" href=""/>
 </head>
 
-<body id="container">
+<body>
+ <header class="main-header">
+<button id="menu-button">
+    <span class="menu-button__bar"></span>
+ </button>
  <nav id="navbar">
-  <div><h3 class="title">l.a.driscoll</h3></div>
+  <div><h3 class="main-header__title"><a class="main-header-title__link" href="index.html">l.a.driscoll</a></h3></div>
   <ul>
     <li><a href="/index.html" id="profile-link">Home</a></li>
     <li><a href="about.html">About</a></li>
-    <li><a href="#projects">Projects</a></li>
+    <li><a href="/index.html#projects">Projects</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
 </nav>
+<nav class="mobile-nav">
+    <ul class="mobile-nav__items">
+     <li class="mobile-nav__item"><a href="about.html">About</a></li>
+    <li class="mobile-nav__item"><a href="/index.html#projects#projects">Projects</a></li>
+        <li class="mobile-nav__item"><a href="#contact">Contact</a></li>
+     </ul>
+    </nav>
 <h1 class="title-section">Hi, I'm Lauren.</h1>
 <main>
    <section class="about-section">
@@ -36,6 +47,7 @@
         <img src="/img/paris.jpg">
       </div>
 </main>
+    <script type="text/javascript" src="/shared.js"></script>
 </body>
 
 </html>

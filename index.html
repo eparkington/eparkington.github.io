@@ -4,63 +4,62 @@
 <head>
 	<meta charset="utf-8">
 	<title>l.a. driscoll</title>
-	<meta name="author" content="Your Name">
-	<meta name="description" content="Example description">
+	<meta name="author" content="l.a. driscoll">
+	<meta name="description" content="Portfolio website">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="style/shared.css">
     <link rel="stylesheet" href="style/main.css">
 	<link rel="icon" type="image/x-icon" href=""/>
 </head>
 <body>
-<div class="backdrop"> </div>
+  <button id="menu-button">
+    <span class="menu-button__bar"></span>
+ </button>
  <header class="main-header">
- <button class="toggle-button">
-    <span class="toggle-button__bar"></span>
-    <span class="toggle-button__bar"></span>
-    <span class="toggle-button__bar"></span>
-</button>
+
  <nav id="navbar">
-     <div><h3 class="title"><a id="title__link" href="index.html">l.a.driscoll</a></h3></div>
-  <ul class="navbar__items">
-    <li class="navbar__item"><a href="index.html">Home</a></li>
-    <li class="navbar__item"><a href="about/about.html">About</a></li>
-    <li class="navbar__item"><a href="#projects">Projects</a></li>
-    <li class="navbar__item"><a href="#contact">Contact</a></li>
-  </ul>
-</nav>
+     <div><h3 class="main-header__title"><a class="main-header-title__link" href="index.html">l.a.driscoll</a></h3></div>
+        <ul class="navbar__items">
+        <li class="navbar__item"><a href="index.html">Home</a></li>
+        <li class="navbar__item"><a href="about/about.html">About</a></li>
+        <li class="navbar__item"><a href="#projects">Projects</a></li>
+        <li class="navbar__item"><a href="#contact">Contact</a></li>
+        </ul>
+        </nav>
+  
 </header>
 <nav class="mobile-nav">
     <ul class="mobile-nav__items">
      <li class="mobile-nav__item"><a href="about/about.html">About</a></li>
-    <li class="mobile-nav__item"><li class="navbar__item"><a href="#projects">Projects</a></li>
+    <li class="mobile-nav__item"><a href="#projects">Projects</a></li>
         <li class="mobile-nav__item"><a href="#contact">Contact</a></li>
      </ul>
-    </nav>
+     </nav>
 <main>
-    <h1 id="title-section">Hi, I'm <span class="title-span">Lauren</span>.</h1>
+    <h1 class="main-title">Hi, I'm <span class="main-title__accent">Lauren</span>.</h1>
     <h2 id="projects">Projects</h2>
     <article id="projects-section">
         <section class="project-type">
             <h3>Responsive Design</h3>
-            <ul>
+            <div class="project-type-inner"><ul>
             <li>Product Landing Page</li>
             <li>Example</li>
-            <li>Example</li></ul>
+                <li>Example</li></ul></div>
         </section>
         <section class="project-type">
             <h3>Javascript</h3>
-              <ul>
+             <div class="project-type-inner"> <ul>
             <li>Product Landing Page</li>
             <li>Example</li>
-            <li>Example</li></ul>
+            <li>Example</li></ul></div>
         </section>
         <section class="project-type">
             <h3>Java</h3>
-            <ul>
+            <div class="project-type-inner"><ul>
             <li>Product Landing Page</li>
             <li>Example</li>
             <li>Example</li>
-            </ul>
+                </ul></div>
         </section>
     </article>
 </main>
