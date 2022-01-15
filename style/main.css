@@ -22,7 +22,7 @@ ul {
     letter-spacing: 0.5rem;
 }
 
-#projects-section {
+.projects-section {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -30,7 +30,8 @@ ul {
     margin: 0;
 }
 
-.project-type {
+
+.wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -42,15 +43,24 @@ ul {
 }
 
 
-.project-type h3 {
+.project-type {
     color: var(--darkest);
     font-variant: small-caps;
     letter-spacing: 0.25rem;
-    
 }
 
-.project-type-inner {
-    display:none;
+.project-type__examples {
+    position: static;
+    opacity: 0;
+}
+
+.project-type__examples:hover {
+   opacity: 100;
+}
+
+.show-projects {
+    display: block;
+    z-index: 5;
 }
 
 
@@ -64,7 +74,7 @@ ul {
         margin-top: 2.5rem;
     }
     
-    #projects-section {
+    .projects-section {
         flex-direction: row;
         justify-content: center;
     }

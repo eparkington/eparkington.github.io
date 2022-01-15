@@ -154,6 +154,11 @@ footer li {
     display: block !important;
 }
 
+.hide {
+    visibility:hidden;
+}
+
+
 .transform {
     transform: rotateZ(-41deg);
 }
